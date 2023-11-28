@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My App" icon="" />
+
+    <StackLayout>
+        <StackLayout>
+            <Label text="Neues Todo" class="text-3xl text-center" />
+            <TextField id="newTodo" hint="Enter new Todo" />
+            <Button text="Add" tap="add"></Button>
+        </StackLayout>
+        <StackLayout height="100%" swipe="reload">
+            <Label text="{{title}}" class="text-3xl text-center" />
+            <ListView id="listView" items="{{todos}}" separatorColor="gray" rowHeight="50" itemTap="remove" background="lightgray" class="list-group">
+                <ListView.itemTemplate>
+                    <StackLayout class="list-group-item">
+                        <Label text="{{ description || 'Downloading...' }}" textWrap="true" class="title" />
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</Page>

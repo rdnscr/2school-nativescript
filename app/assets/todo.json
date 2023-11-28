@@ -1,0 +1,9 @@
+{
+  "todos": [
+    { "checked": false, "description": "Go shopping", "id": 1 },
+    { "checked": false, "description": "Make laundry", "id": 2 },
+    { "checked": false, "description": "Watch TV", "id": 3 },
+    { "checked": false, "description": "Go to work", "id": 4 },
+    { "checked": false, "description": "Go to bed", "id": 5 }
+  ]
+}
